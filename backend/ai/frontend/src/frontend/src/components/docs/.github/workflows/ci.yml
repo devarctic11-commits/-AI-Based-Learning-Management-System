@@ -1,0 +1,16 @@
+name: CI
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    services:
+      mongo:
+        image: mongo:4.4
+        ports: ['27017:27017']
+    steps:
+      - uses: actions/checkout@v3
+      - name: Backend install & test
+        run: |
+          cd backend
+          npm install
+          npm test
