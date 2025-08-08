@@ -1,0 +1,40 @@
+ai‑lms/
+│
+├── backend/
+│   ├── controllers/
+│   │   └── courseController.js
+│   ├── models/
+│   │   └── userModel.js
+│   ├── routes/
+│   │   └── api.js
+│   ├── ai/
+│   │   ├── recommender.js
+│   │   ├── chatbot.js
+│   │   └── plagiarismChecker.py
+│   ├── app.js
+│   └── config/
+│       └── db.js
+│
+├── frontend/
+│   ├── public/
+│   │   └── index.html
+│   └── src/
+│       ├── components/
+│       │   └── Dashboard.js
+│       ├── pages/
+│       │   └── Home.js
+│       ├── App.jsx
+│       └── index.jsx
+│
+├── docs/
+│   ├── README.md
+│   └── architecture-diagram.png
+│
+├── .github/
+│   └── workflows/
+│       └── ci.yml
+│
+├── docker-compose.yml
+├── Dockerfile
+├── .gitignore
+└── LICENSE
